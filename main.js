@@ -44,7 +44,6 @@ console.log(t.split(', ')); //split by character
 
 
 //Arrays - variables that hold multiple values
-
 const numbers = new Array(1,2,3,4,5); //constructor
 console.log(numbers);
 
@@ -96,3 +95,42 @@ console.log(city);
 person.email = 'burakavar@gmail.com'; //add property
 console.log(person);
 console.log(Object.entries(person)); //object to array
+
+const todos = [{
+    id: 1,
+    text: 'Take out trash',
+    isCompleted: true
+},
+{
+    id: 2,
+    text: 'Meeting with boss',
+    isCompleted: true
+},
+{
+    id: 3,
+    text: 'Dentist appointment',
+    isCompleted: false
+}];
+
+console.log(todos);
+console.log(todos[1].text); //access array
+
+// const todoJSON = JSON.stringify(todos); //convert to JSON
+// console.log(todoJSON);
+
+// For
+for(let i = 0; i <=10; i++) {
+    console.log(`For Loop Number: ${i}`);
+}
+
+// While
+let i = 0;
+while (i < 10) {
+    console.log(`While Loop Number: ${i}`);
+    i++;
+}
+
+
+
+
+
