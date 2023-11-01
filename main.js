@@ -149,14 +149,138 @@
 // });
 // console.log(todoCompleted);
 
+// const numbers = [1,2,3,4,5];
+//
+// const squaredNumber = numbers.map(number => number * number);
+// console.log(squaredNumber);
+//
+// const oddNumbers = numbers.filter(function (number) {
+//     return number % 2 !== 0;
+// });
+// console.log(oddNumbers);
+
 // Conditionals
-const value = 10;
-if (value === 10) {
-    console.log('value is 10');
-}
+// const value = 4;
+// if (value === 10) {
+//     console.log('value is 10');
+// } else if (value > 10) {
+//     console.log('value is greater than 10');
+// } else {
+//     console.log('value is less than 10');
+// }
+
+// Multiple conditions
+// const color = 'red';
+// switch(color) {
+//     case 'red':
+//         console.log('color is red');
+//         break;
+//     case 'blue':
+//         console.log('color is blue');
+//         break;
+//     default:
+//         console.log('color is not red or blue');
+//         break;
+// }
+
+// Ternary operator
+// const a = 10;
+// const b = 20;
+// const c = a > b ? 'a is greater than b' : 'a is less than or equal to b';
+// console.log(c);
+
+// Functions
+// function addNums(num1, num2) {
+//     return (num1 + num2);
+// }
+// console.log(addNums(5,5));
+
+// Arrow functions
+// const addOtherNums = (num1 = 1, num2 = 1) => {
+//     return (num1 + num2);
+// }
+// console.log(addOtherNums(5,5));
+//
+// const addOtherNums2 = (num1 = 1, num2 = 1) => (num1 + num2);
+// console.log(addOtherNums2(6,6));
 
 
+// Constructor function
+// function Person(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+// }
+//
+// Person.prototype.getBirdYear = function () {
+//     return this.dob.getFullYear();
+// }
+//
+// Person.prototype.getFullName = function () {
+//     return `${this.firstName} ${this.lastName}`;
+// }
 
+// Instantiate object
+// const person1 = new Person('Burak', 'Avar', '05-19-1992');
+// console.log(person1.getBirdYear());
+// console.log(person1.getFullName());
+// console.log(person1);
 
+// Class
+// class Person2 {
+//     constructor(firstName, lastName, dob) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob);
+//     }
+//
+//     getBirdYear() {
+//         return this.dob.getFullYear();
+//     }
+//
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
 
+// Instantiate object
+// const person2 = new Person2('Burak', 'Avar', '05-19-1992');
+// console.log(person2.getBirdYear()); //get year
+// console.log(person2.getFullName()); //get full name
+// console.log(person2); //get object
 
+// DOM
+
+// Single element
+// const form = document.getElementById('my-form');
+// const container = document.querySelector('.container');
+// console.log(form);
+// console.log(container);
+
+// Multiple element
+// console.log(document.querySelectorAll('.item'));
+// console.log(document.getElementsByClassName('li'));
+// const items = document.querySelectorAll('.item');
+// items.forEach((item) => console.log(item));
+//
+// const button = document.querySelectorAll('.btn');
+
+// const ul = document.querySelector('.items');
+// ul.firstElementChild.textContent = 'Hello';
+// ul.children[1].innerText = 'Burak';
+// ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+// ul.lastElementChild.remove();
+// ul.firstElementChild.style.background = 'black';
+//
+// const button = document.querySelector('.btn');
+// button.style.background = 'green';
+
+// Events
+// button.addEventListener('mouseout', (e) => {
+//     e.preventDefault();
+//     console.log('click');
+//     document.querySelector('.btn').style.background = 'red';
+//     document.querySelector('#my-form').style.background = '#ccc';
+//     document.querySelector('body').classList.add('bg-dark');
+//     document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
+// });
